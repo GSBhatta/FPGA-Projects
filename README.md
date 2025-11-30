@@ -39,7 +39,7 @@ The design streams **12-bit MSB-first samples** into FPGA logic with runtime sam
 * The ADC128S022 returns conversion result one full SPI frame later because of its internal pipelined conversion mechanism.
 * DIN command in frame N → 12-bit result appears on DOUT in frame N+1 (next 16-clock frame).
 * This latency is internal to the ADC chip and not implemented as a pipeline inside RTL, but must be considered when interpreting hardware output.
-* 
+  
 ## 🚀 Features
 
 * ✅ Datasheet-accurate SPI Master timing for ADC128S022
